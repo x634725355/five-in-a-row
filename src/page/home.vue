@@ -184,9 +184,9 @@ function findChessman({ array, base, x, y, state }: findFunc): boolean {
     isLink = chessLink(moveChessX, moveChessY, state);
     if (isLink) {
         array.push(`{"x": ${moveChessX}, "y": ${moveChessY}, "state": ${state}}`);   
-        console.log('true', findWay.value, array, `moveChessX: ${moveChessX}, moveChessY: ${moveChessY}`);
+        // console.log('true', findWay.value, array, `moveChessX: ${moveChessX}, moveChessY: ${moveChessY}`);
     } else {
-        console.log('false', findWay.value, array, `moveChessX: ${moveChessX}, moveChessY: ${moveChessY}`);
+        // console.log('false', findWay.value, array, `moveChessX: ${moveChessX}, moveChessY: ${moveChessY}`);
         moveChessX = firstX;
         moveChessY = firstY;
         findWay.value++;
@@ -270,7 +270,7 @@ function start() {
 
     ctx = canvas.getContext("2d");
     ctx?.clearRect(0, 0, 600, 600);
-    ctx!.strokeStyle = '1B1A17';
+    ctx!.strokeStyle = '#1B1A17';
 
     const { chessmanLength, origin, destination, horizontalX, verticalY } =
         checkerboardParameter;
