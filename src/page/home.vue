@@ -157,7 +157,7 @@ function victoryCode({ x, y, state, array = [], base = 0 }:victoryType): boolean
 
 // 棋子移动 x,y 坐标轴
 const movePoint = [
-        [{ x: chessmanLength.value, y: 0 }, { x: -chessmanLength, y: 0 }],
+        [{ x: chessmanLength.value, y: 0 }, { x: -chessmanLength.value, y: 0 }],
         [{ x: 0, y: chessmanLength.value }, { x: 0, y: -chessmanLength.value }],
         [{ x: chessmanLength.value, y: chessmanLength.value }, { x: -chessmanLength.value, y: -chessmanLength.value }],
         [{ x: chessmanLength.value, y: -chessmanLength.value }, { x: -chessmanLength.value, y: chessmanLength.value }],
